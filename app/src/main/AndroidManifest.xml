@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Spesa">
         <activity
+            android:name=".EditActivity"
+            android:label = "Edition des listes"
+            android:parentActivityName=".MainActivity"
+            android:exported="true" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.spesa.MainActivity"/>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
