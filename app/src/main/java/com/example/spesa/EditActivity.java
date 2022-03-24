@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class EditActivity extends AppCompatActivity {
 
     public static final int TEXT_REQUEST = 1;
-    private TextView nouvelleListe;
+    private Button nouvelleListe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
