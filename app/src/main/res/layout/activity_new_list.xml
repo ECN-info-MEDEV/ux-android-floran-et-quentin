@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewListActivity">
+
+    <EditText
+        android:id="@+id/editTexte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Nom de la liste"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFruit"
+        android:layout_width="412dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_dark"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Fruits et légumes"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/jaune_spesa"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTexte" />
+
+    <ImageButton
+        android:id="@+id/imageTomate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="Tomate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFruit"
+        app:srcCompat="@drawable/tomate" />
+
+    <ImageButton
+        android:id="@+id/imageConcombre"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="Concombre"
+        app:layout_constraintStart_toEndOf="@+id/imageTomate"
+        app:layout_constraintTop_toBottomOf="@+id/textFruit"
+        app:srcCompat="@drawable/concombre" />
+
+    <ImageButton
+        android:id="@+id/imageBanane"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="Banane"
+        app:layout_constraintStart_toEndOf="@+id/imageKiwi"
+        app:layout_constraintTop_toBottomOf="@+id/imageConcombre"
+        app:srcCompat="@drawable/banane" />
+
+    <ImageButton
+        android:id="@+id/imageKiwi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="Kiwi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTomate"
+        app:srcCompat="@drawable/kiwi" />
+
+    <ImageButton
+        android:id="@+id/imageAbricot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="Abricot"
+        app:layout_constraintStart_toEndOf="@+id/imageConcombre"
+        app:layout_constraintTop_toBottomOf="@+id/textFruit"
+        app:srcCompat="@drawable/abricot" />
+
+    <TextView
+        android:id="@+id/textViande"
+        android:layout_width="412dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/rouge_spesa"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Viande"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/jaune_spesa"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBanane" />
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enregistrer"
+        android:onClick="launchEditActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:rotationX="180"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="@+id/textFruit"
+        app:layout_constraintStart_toStartOf="@+id/textFruit"
+        app:layout_constraintTop_toTopOf="@+id/textFruit"
+        app:srcCompat="@drawable/upperarrow" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:rotationX="0"
+        app:layout_constraintBottom_toBottomOf="@+id/textViande"
+        app:layout_constraintStart_toStartOf="@+id/textViande"
+        app:layout_constraintTop_toTopOf="@+id/textViande"
+        app:srcCompat="@drawable/upperarrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
